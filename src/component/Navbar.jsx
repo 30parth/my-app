@@ -15,7 +15,7 @@ export default function Navbar() {
             </div>
             <ul style={{ listStyle: 'none', display: 'flex', gap: '2rem' }}>
                 <li>
-                    <a href="#home" style={{ color: '#BBDEFB', textDecoration: 'none', transition: 'color 0.3s ease-in-out' }}
+                    <a href="/home" style={{ color: '#BBDEFB', textDecoration: 'none', transition: 'color 0.3s ease-in-out' }}
                         onMouseOver={(e) => (e.target.style.color = '#FFFFFF')}
                         onMouseOut={(e) => (e.target.style.color = '#BBDEFB')}
                     >
@@ -23,7 +23,7 @@ export default function Navbar() {
                     </a>
                 </li>
                 <li>
-                    <a href="#about" style={{ color: '#BBDEFB', textDecoration: 'none', transition: 'color 0.3s ease-in-out' }}
+                    <a href="/about" style={{ color: '#BBDEFB', textDecoration: 'none', transition: 'color 0.3s ease-in-out' }}
                         onMouseOver={(e) => (e.target.style.color = '#FFFFFF')}
                         onMouseOut={(e) => (e.target.style.color = '#BBDEFB')}
                     >
@@ -31,7 +31,7 @@ export default function Navbar() {
                     </a>
                 </li>
                 <li>
-                    <a href="#projects" style={{ color: '#BBDEFB', textDecoration: 'none', transition: 'color 0.3s ease-in-out' }}
+                    <a href="/projects" style={{ color: '#BBDEFB', textDecoration: 'none', transition: 'color 0.3s ease-in-out' }}
                         onMouseOver={(e) => (e.target.style.color = '#FFFFFF')}
                         onMouseOut={(e) => (e.target.style.color = '#BBDEFB')}
                     >
@@ -39,7 +39,7 @@ export default function Navbar() {
                     </a>
                 </li>
                 <li>
-                    <a href="#contact" style={{ color: '#BBDEFB', textDecoration: 'none', transition: 'color 0.3s ease-in-out' }}
+                    <a href="/contact" style={{ color: '#BBDEFB', textDecoration: 'none', transition: 'color 0.3s ease-in-out' }}
                         onMouseOver={(e) => (e.target.style.color = '#FFFFFF')}
                         onMouseOut={(e) => (e.target.style.color = '#BBDEFB')}
                     >
