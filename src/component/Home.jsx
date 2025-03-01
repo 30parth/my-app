@@ -14,7 +14,7 @@ export default function Home() {
             <div style={{ maxWidth: '800px', borderRadius: '12px', padding: '3rem', background: 'rgba(255, 255, 255, 0.9)', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)' }}>
               <div style={{ marginBottom: '2rem' }}>
                 <img
-                  src="your-profile-image.jpg" // Replace with your image path
+                  src="./component/parth.jpg" // Replace with your image path
                   alt="Your Profile"
                   style={{
                     width: '150px',
@@ -27,7 +27,7 @@ export default function Home() {
                 />
               </div>
               <h1 style={{ fontSize: '3rem', marginBottom: '1rem', color: '#283593' }}>
-                Hello, I'm [Your Name]
+                Hello, I'm [Parth Solanki Jitendrabhai]
               </h1>
               <p style={{ fontSize: '1.2rem', lineHeight: '1.8', color: '#333' }}>
                 I'm a passionate [Your Profession] with a focus on building robust and user-friendly web applications.
