@@ -2,7 +2,6 @@ import React from 'react'
 
 export default function temp() {
   return (
-    return (
         <section id="home" style={{
           display: 'flex',
           alignItems: 'center',
@@ -58,5 +57,4 @@ export default function temp() {
           <Outlet />
         </section>
       );
-  )
 }

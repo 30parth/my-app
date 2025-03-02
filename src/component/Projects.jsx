@@ -5,11 +5,11 @@ export default function Projects() {
     container: {
       backgroundColor: 'rgb(153, 209, 255)',
       color: 'white',
-      padding: '1rem',
+      padding: '3rem',
       fontFamily: 'Roboto, sans-serif',
     },
     heading: {
-      color: 'rgb(153, 209, 255)',
+      color: '#283593',
       marginBottom: '2rem',
       textAlign: 'center',
       fontSize: '2.5rem',
@@ -73,23 +73,23 @@ export default function Projects() {
   const projectsData = [
     {
       title: 'Dev Portfolio',
-      description: 'Developer Portfolio Website made in React. Fully customisable and dynamic, easily change data and images. Dark Mode Support.',
+      description: 'Developer Portfolio Website made in React. Fully customisable and Dark Mode Support.',
       tech: ['React', 'Portfolio', 'JavaScript'],
-      githubLink: '#', // Replace with your GitHub link
+      githubLink: 'https://github.com/30parth/my-app', // Replace with your GitHub link
       liveLink: '#', // Replace with your live link
     },
     {
-      title: 'Caaring - Cab Share App',
-      description: 'A Cab Sharing web app made using Django for VIT Students. People can create a new cab or request to join an existing cab. Added User authentication and password reset using SendGrid. Deployed on Heroku using gunicorn.',
-      tech: ['Python', 'Django', 'Bootstrap', 'SendGrid', 'Heroku', 'Gunicorn', 'VIT'],
-      githubLink: '#',
+      title: 'NewsMonkey',
+      description: 'A News application with daily news updates made in React.  ',
+      tech: ['JavaScrpit', 'React', 'NEWSAPI','Bootstrap'],
+      githubLink: 'https://github.com/30parth/newsApp',
       liveLink: '#',
     },
     {
-      title: 'Quiet Hours App',
+      title: 'Foodly',
       description: 'An Android App that automatically silences your phone during class hours, designed for VITians. Option to select class slots and custom time. Option to put on Vibrate instead of Silent.',
-      tech: ['Java', 'Android', 'Alarm Manager', 'VIT'],
-      githubLink: '#',
+      tech: ['HTML', 'CSS', 'PHP', 'Bootstrap'],
+      githubLink: 'https://github.com/30parth/Foodly',
       liveLink: '#',
     },
   ];

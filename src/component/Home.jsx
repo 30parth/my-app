@@ -5,7 +5,7 @@ import photoMy from './parth.jpg';
 export default function Home() {
   const styles = {
     container: {
-      backgroundColor: '#e0f2fe', // Light blue background
+      backgroundColor: 'rgb(153, 209, 255)', // Light blue background
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
@@ -14,7 +14,7 @@ export default function Home() {
       padding: '2rem',
     },
     card: {
-      backgroundColor: 'white',
+      backgroundColor: '#283593',
       borderRadius: '12px',
       boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
       padding: '3rem',
@@ -35,12 +35,12 @@ export default function Home() {
       fontSize: '2.5rem',
       fontWeight: '600',
       marginBottom: '1.5rem',
-      color: '#333',
+      color: 'rgb(153, 209, 255)',
     },
     paragraph: {
       fontSize: '1.1rem',
       lineHeight: '1.8',
-      color: '#555',
+      color: 'rgb(153, 209, 255)',
       marginBottom: '2rem',
     },
     button: {
@@ -82,15 +82,15 @@ export default function Home() {
         <Link
           to="/projects" // Link to your projects section
           style={{
-            backgroundColor: '#283593',
-            color: 'white',
+            backgroundColor: 'rgb(153, 209, 255)',
+            color: '#283593',
             padding: '1rem 2rem',
             borderRadius: '8px',
             textDecoration: 'none',
             transition: 'background-color 0.3s ease',
           }}
-          onMouseOver={(e) => (e.target.style.backgroundColor = '#1A237E')}
-          onMouseOut={(e) => (e.target.style.backgroundColor = '#283593')}
+          onMouseOver={(e) => (e.target.style.backgroundColor = 'rgb(153, 209, 255)')}
+          onMouseOut={(e) => (e.target.style.backgroundColor = 'rgb(167, 191, 255)')}
         >
           View My Work
         </Link>
