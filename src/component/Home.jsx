@@ -7,14 +7,14 @@ export default function Home() {
             alignItems: 'center',
             justifyContent: 'center',
             minHeight: '80vh',
-            background: 'linear-gradient(135deg, #E3F2FD, #BBDEFB)', // Gradient background
+            background: 'linear-gradient(135deg,rgb(182, 225, 255),rgb(153, 209, 255))',
             padding: '4rem 2rem',
             textAlign: 'center',
           }}>
             <div style={{ maxWidth: '800px', borderRadius: '12px', padding: '3rem', background: 'rgba(255, 255, 255, 0.9)', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)' }}>
               <div style={{ marginBottom: '2rem' }}>
                 <img
-                  src="./component/parth.jpg" // Replace with your image path
+                  src="./component/parth.jpg" 
                   alt="Your Profile"
                   style={{
                     width: '150px',
