@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
     return (
@@ -15,36 +16,36 @@ export default function Navbar() {
             </div>
             <ul style={{ listStyle: 'none', display: 'flex', gap: '2rem' }}>
                 <li>
-                    <a href="/home" style={{ color: '#BBDEFB', textDecoration: 'none', transition: 'color 0.3s ease-in-out' }}
+                    <Link to="/home" style={{ color: '#BBDEFB', textDecoration: 'none', transition: 'color 0.3s ease-in-out' }}
                         onMouseOver={(e) => (e.target.style.color = '#FFFFFF')}
                         onMouseOut={(e) => (e.target.style.color = '#BBDEFB')}
                     >
                         Home
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="/about" style={{ color: '#BBDEFB', textDecoration: 'none', transition: 'color 0.3s ease-in-out' }}
+                    <Link to="/about" style={{ color: '#BBDEFB', textDecoration: 'none', transition: 'color 0.3s ease-in-out' }}
                         onMouseOver={(e) => (e.target.style.color = '#FFFFFF')}
                         onMouseOut={(e) => (e.target.style.color = '#BBDEFB')}
                     >
-                        About
-                    </a>
+                        About me
+                    </Link>
                 </li>
                 <li>
-                    <a href="/projects" style={{ color: '#BBDEFB', textDecoration: 'none', transition: 'color 0.3s ease-in-out' }}
+                    <Link to="/projects" style={{ color: '#BBDEFB', textDecoration: 'none', transition: 'color 0.3s ease-in-out' }}
                         onMouseOver={(e) => (e.target.style.color = '#FFFFFF')}
                         onMouseOut={(e) => (e.target.style.color = '#BBDEFB')}
                     >
                         Projects
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="/contact" style={{ color: '#BBDEFB', textDecoration: 'none', transition: 'color 0.3s ease-in-out' }}
+                    <Link to="/contact" style={{ color: '#BBDEFB', textDecoration: 'none', transition: 'color 0.3s ease-in-out' }}
                         onMouseOver={(e) => (e.target.style.color = '#FFFFFF')}
                         onMouseOut={(e) => (e.target.style.color = '#BBDEFB')}
                     >
                         Contact
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </nav>
