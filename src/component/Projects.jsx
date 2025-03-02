@@ -5,7 +5,7 @@ export default function Projects() {
     container: {
       backgroundColor: 'rgb(153, 209, 255)',
       color: 'white',
-      padding: '3rem',
+      padding: '1rem',
       fontFamily: 'Roboto, sans-serif',
     },
     heading: {
@@ -26,7 +26,7 @@ export default function Projects() {
       backgroundColor: '#303f9f', // Slightly lighter dark blue
       borderRadius: '12px',
       padding: '2rem',
-      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.63)',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-between',
@@ -68,13 +68,6 @@ export default function Projects() {
       margin: '0 0.5rem',
       fontWeight: '600',
     },
-    projectImage: {
-      width: '100%',
-      borderRadius: '8px',
-      marginBottom: '1rem',
-      objectFit: 'cover',
-      maxHeight: '200px', // Adjust as needed
-    },
   };
 
   const projectsData = [
@@ -84,7 +77,6 @@ export default function Projects() {
       tech: ['React', 'Portfolio', 'JavaScript'],
       githubLink: '#', // Replace with your GitHub link
       liveLink: '#', // Replace with your live link
-      image: 'path/to/dev-portfolio-image.png', // Replace with your image path
     },
     {
       title: 'Caaring - Cab Share App',
@@ -92,7 +84,6 @@ export default function Projects() {
       tech: ['Python', 'Django', 'Bootstrap', 'SendGrid', 'Heroku', 'Gunicorn', 'VIT'],
       githubLink: '#',
       liveLink: '#',
-      image: 'path/to/caaring-image.png',
     },
     {
       title: 'Quiet Hours App',
@@ -100,7 +91,6 @@ export default function Projects() {
       tech: ['Java', 'Android', 'Alarm Manager', 'VIT'],
       githubLink: '#',
       liveLink: '#',
-      image: 'path/to/quiet-hours-image.png',
     },
   ];
 
