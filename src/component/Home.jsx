@@ -1,11 +1,11 @@
 import React from 'react';
-import { Outlet, Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 import photoMy from './parth.jpg';
 
-export default function Home() {
+export default function Home(props) {
   const styles = {
     container: {
-      backgroundColor: 'rgb(153, 209, 255)', // Light blue background
+      backgroundColor: props.dark ? ' #f4f4f4': ' #222',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',

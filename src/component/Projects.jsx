@@ -16,7 +16,7 @@ export default function Projects() {
       fontWeight: '700',
       textTransform: 'uppercase',
       letterSpacing: '2px',
-    },
+    },  
     projectGrid: {
       display: 'grid',
       gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',

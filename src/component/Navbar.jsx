@@ -1,53 +1,155 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
-    return (
-        <nav style={{
-            backgroundColor: '#283593', // Deep blue background
-            padding: '1rem 2rem',
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)', // Subtle shadow
-        }}>
-            <div style={{ color: '#E3F2FD', fontSize: '1.5rem', fontWeight: 'bold' }}>
-                My Portfolio
-            </div>
-            <ul style={{ listStyle: 'none', display: 'flex', gap: '2rem' }}>
-                <li>
-                    <Link to="/home" style={{ color: '#BBDEFB', textDecoration: 'none', transition: 'color 0.3s ease-in-out' }}
-                        onMouseOver={(e) => (e.target.style.color = '#FFFFFF')}
-                        onMouseOut={(e) => (e.target.style.color = '#BBDEFB')}
-                    >
-                        Home
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/about" style={{ color: '#BBDEFB', textDecoration: 'none', transition: 'color 0.3s ease-in-out' }}
-                        onMouseOver={(e) => (e.target.style.color = '#FFFFFF')}
-                        onMouseOut={(e) => (e.target.style.color = '#BBDEFB')}
-                    >
-                        About me
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/projects" style={{ color: '#BBDEFB', textDecoration: 'none', transition: 'color 0.3s ease-in-out' }}
-                        onMouseOver={(e) => (e.target.style.color = '#FFFFFF')}
-                        onMouseOut={(e) => (e.target.style.color = '#BBDEFB')}
-                    >
-                        Projects
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/contact" style={{ color: '#BBDEFB', textDecoration: 'none', transition: 'color 0.3s ease-in-out' }}
-                        onMouseOver={(e) => (e.target.style.color = '#FFFFFF')}
-                        onMouseOut={(e) => (e.target.style.color = '#BBDEFB')}
-                    >
-                        Contact
-                    </Link>
-                </li>
-            </ul>
-        </nav>
-    );
+export default function Navbar(props) {
+  const styles = {
+    navbar: {
+      backgroundColor: '#333',
+      color: 'white',
+      padding: '30px 0',
+    },
+    container: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      maxWidth: '1200px',
+      margin: '0 auto',
+      padding: '0 20px',
+    },
+    logo: {
+      fontSize: '1.5rem',
+      fontWeight: 'bold',
+      textDecoration: 'none',
+      color: 'white',
+    },
+    menu: {
+      listStyle: 'none',
+      display: 'flex',
+      margin: '0',
+      padding: '0',
+    },
+    item: {
+      marginLeft: '20px',
+    },
+    link: {
+      backgroundColor: '#333',
+      textDecoration: 'none',
+      color: 'white',
+      padding: '20px 15px',
+    },
+    linkToggle: {
+      backgroundColor: 'blue',
+      textDecoration: 'none',
+      color: 'white',
+      padding: '20px 15px',
+    },
+    linkHover: {
+      color: 'rgb(0,0,0)',
+      padding: '20px 15px',
+      backgroundColor: 'rgb(255, 255, 255)',
+      borderRadius: '4px',
+    },
+    button: {
+      textDecoration: 'none',
+      background: 'none',
+      border: 'none',
+      color: 'white',
+      cursor: 'pointer',
+    },
+  };
+
+  return (
+    <nav style={styles.navbar}>
+      <div style={styles.container}>
+        <Link href="/" style={styles.logo}>
+          Your Name
+        </Link>
+        <ul style={styles.menu}>
+          <li style={styles.item}>
+            <Link
+              to="/home"
+              style={styles.link}
+              onMouseOver={(e) => {
+                e.target.style.color = styles.linkHover.color;
+                e.target.style.backgroundColor = styles.linkHover.backgroundColor;
+                e.target.style.borderRadius = styles.linkHover.borderRadius;
+              }}
+              onMouseOut={(e) => {
+                e.target.style.color = styles.link.color;
+                e.target.style.backgroundColor = styles.link.backgroundColor;
+              }}
+            >
+              Home
+            </Link>
+          </li>
+          <li style={styles.item}>
+            <Link
+              to="/about"
+              style={styles.link}
+              onMouseOver={(e) => {
+                e.target.style.color = styles.linkHover.color;
+                e.target.style.backgroundColor = styles.linkHover.backgroundColor;
+                e.target.style.borderRadius = styles.linkHover.borderRadius;
+              }}
+              onMouseOut={(e) => {
+                e.target.style.color = styles.link.color;
+                e.target.style.backgroundColor = styles.link.backgroundColor;
+              }}
+            >
+              About
+            </Link>
+          </li>
+          <li style={styles.item}>
+            <Link
+              to="/projects"
+              style={styles.link}
+              onMouseOver={(e) => {
+                e.target.style.color = styles.linkHover.color;
+                e.target.style.backgroundColor = styles.linkHover.backgroundColor;
+                e.target.style.borderRadius = styles.linkHover.borderRadius;
+              }}
+              onMouseOut={(e) => {
+                e.target.style.color = styles.link.color;
+                e.target.style.backgroundColor = styles.link.backgroundColor;
+              }}
+            >
+              Projects
+            </Link>
+          </li>
+          <li style={styles.item}>
+            <Link
+              to="/contact"
+              style={styles.link}
+              onMouseOver={(e) => {
+                e.target.style.color = styles.linkHover.color;
+                e.target.style.backgroundColor = styles.linkHover.backgroundColor;
+                e.target.style.borderRadius = styles.linkHover.borderRadius;
+              }}
+              onMouseOut={(e) => {
+                e.target.style.color = styles.link.color;
+                e.target.style.backgroundColor = styles.link.backgroundColor;
+              }}
+            >
+              Contact
+            </Link>
+          </li>
+          <li style={styles.item}>
+            <Link style={styles.linkToggle} 
+              onMouseOver={(e) => {
+                e.target.style.color = styles.linkHover.color;
+                e.target.style.backgroundColor = styles.linkHover.backgroundColor;
+                e.target.style.borderRadius = styles.linkHover.borderRadius;
+              }}
+              onMouseOut={(e) => {e.target.style.color = styles.link.color;
+                e.target.style.backgroundColor = styles.link.backgroundColor;
+              }}
+              onClick={props.toggleDark}
+            >
+              {props.dark ? 'DarkMode' : 'Lightmode' }
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
 }
