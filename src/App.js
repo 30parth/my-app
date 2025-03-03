@@ -12,11 +12,11 @@ function App() {
 
   const toggleDark = ()=>{
     if (dark===true) {
-      console.log(dark);
+      // console.log(dark);
       setDark(false);
     }
     else{
-      console.log(dark);
+      // console.log(dark);
       setDark(true);
     }
   }
@@ -26,11 +26,11 @@ function App() {
       <Router>
         <Navbar dark={dark} toggleDark={toggleDark}/>
         <Routes>
-          <Route path="/" element={<Home dark={dark}/>} />
-          <Route path="/Home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact/>} />
+          <Route path="/" element={<Home dark={dark} toggleDark={toggleDark}/>} />
+          <Route path="/Home" element={<Home dark={dark} toggleDark={toggleDark}/>} />
+          <Route path="/about" element={<About dark={dark} toggleDark={toggleDark} />} />
+          <Route path="/projects" element={<Projects dark={dark} toggleDark={toggleDark}/>} />
+          <Route path="/contact" element={<Contact dark={dark} toggleDark={toggleDark}/>} />
         </Routes>
       </Router>
     </>

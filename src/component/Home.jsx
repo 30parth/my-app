@@ -3,6 +3,7 @@ import {Link } from "react-router-dom";
 import photoMy from './parth.jpg';
 
 export default function Home(props) {
+  console.log(props.dark);
   const styles = {
     container: {
       backgroundColor: props.dark ? ' #f4f4f4': ' #222',
@@ -14,7 +15,7 @@ export default function Home(props) {
       padding: '2rem',
     },
     card: {
-      backgroundColor: '#283593',
+      backgroundColor: props.dark ? '#fff' : '#333',
       borderRadius: '12px',
       boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
       padding: '3rem',
@@ -35,12 +36,12 @@ export default function Home(props) {
       fontSize: '2.5rem',
       fontWeight: '600',
       marginBottom: '1.5rem',
-      color: 'rgb(153, 209, 255)',
+      color: props.dark ? '#333' : '#eee',
     },
     paragraph: {
       fontSize: '1.1rem',
       lineHeight: '1.8',
-      color: 'rgb(153, 209, 255)',
+      color: props.dark ? '#332' : '#eed',
       marginBottom: '2rem',
     },
     button: {

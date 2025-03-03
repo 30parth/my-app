@@ -1,15 +1,15 @@
 import React from 'react'
 
-export default function Projects() {
+export default function Projects(props) {
   const styles = {
     container: {
-      backgroundColor: 'rgb(153, 209, 255)',
-      color: 'white',
-      padding: '3rem',
+      backgroundColor: props.dark ? '#222' : '#eee',
+      color: props.dark ? '#eee' : '#333',
+      padding: '5rem',
       fontFamily: 'Roboto, sans-serif',
     },
     heading: {
-      color: '#283593',
+      color:  props.dark ? '#eee' : '#333',
       marginBottom: '2rem',
       textAlign: 'center',
       fontSize: '2.5rem',
@@ -23,16 +23,16 @@ export default function Projects() {
       gap: '2rem',
     },
     projectCard: {
-      backgroundColor: '#303f9f', // Slightly lighter dark blue
+      backgroundColor: props.dark ? '#333' : '#ddd', // Slightly lighter dark blue
       borderRadius: '12px',
       padding: '2rem',
-      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.63)',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.34)',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-between',
     },
     projectTitle: {
-      color: 'rgb(153, 209, 255)',
+      color:  props.dark ? '#eee' : '#333',
       fontSize: '1.8rem',
       fontWeight: '600',
       marginBottom: '1rem',
@@ -45,9 +45,10 @@ export default function Projects() {
     projectTech: {
       marginTop: '1rem',
       textAlign: 'center',
+      color: props.dark ? '#333' : '#eee',
     },
     techTag: {
-      backgroundColor: '#424242', // Darker gray for tags
+      backgroundColor:  props.dark ? '#ddd' : '#222', // Darker gray for tags
       padding: '0.5rem 1rem',
       borderRadius: '20px',
       margin: '0.3rem',

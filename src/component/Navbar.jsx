@@ -38,9 +38,9 @@ export default function Navbar(props) {
       padding: '20px 15px',
     },
     linkToggle: {
-      backgroundColor: 'blue',
+      backgroundColor: 'rgb(255, 255, 255)',
       textDecoration: 'none',
-      color: 'white',
+      color: 'black',
       padding: '20px 15px',
     },
     linkHover: {
@@ -61,8 +61,8 @@ export default function Navbar(props) {
   return (
     <nav style={styles.navbar}>
       <div style={styles.container}>
-        <Link href="/" style={styles.logo}>
-          Your Name
+        <Link to="/" style={styles.logo}>
+          Parth Solanki
         </Link>
         <ul style={styles.menu}>
           <li style={styles.item}>
@@ -140,8 +140,8 @@ export default function Navbar(props) {
                 e.target.style.backgroundColor = styles.linkHover.backgroundColor;
                 e.target.style.borderRadius = styles.linkHover.borderRadius;
               }}
-              onMouseOut={(e) => {e.target.style.color = styles.link.color;
-                e.target.style.backgroundColor = styles.link.backgroundColor;
+              onMouseOut={(e) => {e.target.style.color = styles.linkToggle.color;
+                e.target.style.backgroundColor = styles.linkToggle.backgroundColor;
               }}
               onClick={props.toggleDark}
             >

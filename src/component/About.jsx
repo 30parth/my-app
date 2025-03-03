@@ -1,19 +1,19 @@
 import React from 'react'
 
-export default function About() {
+export default function About(props) {
     const styles = {
         container: {
-            backgroundColor: '#283593',
-            color: 'white',
-            padding: '3rem',
+            backgroundColor:  props.dark ? '#333' : '#eee',
+            color:  props.dark ? '#eee' : '#333 ',
+            padding: '5rem',
             borderRadius: '12px',
             fontFamily: 'Roboto, sans-serif',
             boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)',
             maxWidth: '800px',
-            margin: '1rem auto',
+            margin: '0rem auto',
         },
         heading: {
-            color: 'rgb(153, 209, 255)',
+            color:  props.dark ? '#eee' : '#333',
             marginBottom: '2rem',
             textAlign: 'center',
             fontSize: '2.5rem',
@@ -23,11 +23,11 @@ export default function About() {
         },
         section: {
             marginBottom: '2.5rem',
-            borderBottom: '1px solid rgba(153, 209, 255, 0.3)',
+            borderBottom: '1px solid rgb(68, 110, 142)',
             paddingBottom: '2rem',
         },
         sectionHeading: {
-            color: 'rgb(153, 209, 255)',
+            color: props.dark ? '#eee' : '#333',
             marginBottom: '1rem',
             fontSize: '1.8rem',
             fontWeight: '600',
@@ -44,7 +44,9 @@ export default function About() {
             fontSize: '1.1rem',
         },
         back: {
-            backgroundColor: 'rgb(153, 209, 255)',
+            backgroundColor:  props.dark ? '#222' : '#fff',
+            margin: '0',
+            padding: '3rem',
         },
     };
 
