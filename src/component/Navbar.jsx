@@ -7,6 +7,7 @@ export default function Navbar(props) {
       backgroundColor: '#333',
       color: 'white',
       padding: '30px 0',
+      fontFamily: 'Roboto, sans-serif',
     },
     container: {
       display: 'flex',

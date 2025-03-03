@@ -11,7 +11,7 @@ export default function Home(props) {
       justifyContent: 'center',
       alignItems: 'center',
       minHeight: '100vh',
-      fontFamily: 'sans-serif',
+      fontFamily: 'Roboto, sans-serif',
       padding: '2rem',
     },
     card: {
