@@ -84,7 +84,7 @@ export default function Projects(props) {
       description: 'Developer Portfolio Website made in React. Fully customisable and Dark Mode Support.',
       tech: ['React', 'Portfolio', 'JavaScript'],
       githubLink: 'https://github.com/30parth/my-app', // Replace with your GitHub link
-      liveLink: '#', // Replace with your live link
+      liveLink: 'https://parthsolankij.netlify.app/', // Replace with your live link
     },
     {
       title: 'NewsMonkey',
