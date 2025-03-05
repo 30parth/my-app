@@ -3,7 +3,6 @@ import {Link } from "react-router-dom";
 import photoMy from './parth.jpg';
 
 export default function Home(props) {
-  console.log(props.dark);
   const styles = {
     container: {
       backgroundColor: props.dark ? ' #f4f4f4': ' #222',
@@ -71,14 +70,12 @@ export default function Home(props) {
           alt="Profile"
           style={styles.profileImage}
         />
-        <h1 style={styles.heading}>Hello, I'm [Parth Solanki Jitendrabhai]</h1>
+        <h1 style={styles.heading}>Hello, I'm Parth Solanki Jitendrabhai</h1>
         <p style={styles.paragraph}>
-          I'm a passionate [Your Profession] with a focus on building robust and user-friendly web
-          applications. My expertise lies in [List Key Technologies/Skills]. I enjoy tackling challenging
-          problems and creating innovative solutions.
+        As a computer engineer and web developer, I'm passionate about crafting dynamic and user-friendly web experiences. My expertise lies in React, where I enjoy building interactive interfaces and optimizing performance.
         </p>
         <p style={styles.paragraph}>
-          I am currently focusing on improving my skills in [Current Focus Area].
+          I am currently focusing on improving my skills in web development .My goal is to create impactful and efficient web applications that meet user needs.I enjoy solving problems and making websites work well.
         </p>
         <Link
           to="/projects" // Link to your projects section

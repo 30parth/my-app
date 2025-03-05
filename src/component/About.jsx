@@ -67,10 +67,10 @@ export default function About(props) {
                     <h3 style={styles.sectionHeading}>Education</h3>
                     <ul>
                         <li style={styles.listItem}>
-                            <strong>[Your Degree] in [Your Major]</strong> - [University Name], [Year Graduated]
+                            <strong>Diploma in Computer Engineering with 9.05 CGPA</strong> - Gujarat Technological University in 2024
                         </li>
                         <li style={styles.listItem}>
-                            <strong>[Another Degree/Certification, if applicable]</strong> - [Institution Name], [Year]
+                            <strong>Compeleted 10th with 86%</strong> - Adarsh School in 2021
                         </li>
                     </ul>
                 </div>
@@ -78,13 +78,12 @@ export default function About(props) {
                 <div style={styles.section}>
                     <h3 style={styles.sectionHeading}>Skills</h3>
                     <ul>
-                        <li style={styles.listItem}>JavaScript (React, Node.js)</li>
+                        <li style={styles.listItem}>JavaScript (React)</li>
                         <li style={styles.listItem}>HTML5/CSS3</li>
                         <li style={styles.listItem}>Git/GitHub</li>
-                        <li style={styles.listItem}>Responsive Design</li>
+                        <li style={styles.listItem}>Python</li>
                     </ul>
                 </div>
-
             </div>
         </div>
     );

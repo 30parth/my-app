@@ -5,7 +5,7 @@ export default function Projects(props) {
     container: {
       backgroundColor: props.dark ? '#222' : '#eee',
       color: props.dark ? '#eee' : '#333',
-      padding: '5rem',
+      padding: '3rem 1rem',
       fontFamily: 'Roboto, sans-serif',
     },
     heading: {
@@ -84,14 +84,12 @@ export default function Projects(props) {
       description: 'A News application with daily news updates made in React.  ',
       tech: ['JavaScrpit', 'React', 'NEWSAPI','Bootstrap'],
       githubLink: 'https://github.com/30parth/newsApp',
-      liveLink: '#',
     },
     {
       title: 'Foodly',
       description: 'An Android App that automatically silences your phone during class hours, designed for VITians. Option to select class slots and custom time. Option to put on Vibrate instead of Silent.',
       tech: ['HTML', 'CSS', 'PHP', 'Bootstrap'],
       githubLink: 'https://github.com/30parth/Foodly',
-      liveLink: '#',
     },
   ];
 
