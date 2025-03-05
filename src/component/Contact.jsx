@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 export default function Contact(props) {
     const styles = {
         container: {
-            backgroundColor:  props.dark ? '#333' : '#eee',
-            color:  props.dark ? '#eee' : '#333 ',
+            // backgroundColor:  props.dark ? '#333' : '#eee',
+            backgroundColor:  props.dark ? '#eee' : '#333',
+            // color:  props.dark ? '#eee' : '#333 ',
+            color:  props.dark ? '#333' : '#eee',
             padding: '5rem',
             borderRadius: '12px',
             fontFamily: 'Roboto, sans-serif',
@@ -21,7 +23,9 @@ export default function Contact(props) {
         },
         contactDetails: {
             marginBottom: '20px',
-            color: props.dark ? '#eee' : '#333'
+            // color: props.dark ? '#eee' : '#333',
+            color:  props.dark ? '#333' : '#eee',
+
         },
         socialIcons: {
             display: 'flex',
@@ -30,7 +34,8 @@ export default function Contact(props) {
             marginTop: '20px',
             maxWidth: '1000px',
             borderRadius: '10px',
-            backgroundColor: props.dark ? '#ccc' : '#aaa'
+            // backgroundColor: props.dark ? '#ccc' : '#aaa'
+            backgroundColor: props.dark ? '#aaa' : '#ccc',
         },
         socialIcon: {
             margin: '0 20px',
@@ -48,7 +53,8 @@ export default function Contact(props) {
             color: '#171515',
         },
         back: {
-            backgroundColor:  props.dark ? '#222' : '#fff',
+            // backgroundColor:  props.dark ? '#222' : '#fff',
+            backgroundColor:  props.dark ? '#fff' : '#222',
             margin: '0',
             padding: '5rem',
         },

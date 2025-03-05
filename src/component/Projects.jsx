@@ -3,13 +3,16 @@ import React from 'react'
 export default function Projects(props) {
   const styles = {
     container: {
-      backgroundColor: props.dark ? '#222' : '#eee',
-      color: props.dark ? '#eee' : '#333',
-      padding: '3rem 1rem',
+      // backgroundColor: props.dark ? '#222' : '#eee',
+      backgroundColor: props.dark ? '#eee' : '#222',
+      // color: props.dark ? '#eee' : '#333',
+      color: props.dark ? '#333' : '#eee',
+      padding: '3rem 1.5rem',
       fontFamily: 'Roboto, sans-serif',
     },
     heading: {
-      color:  props.dark ? '#eee' : '#333',
+      // color:  props.dark ? '#eee' : '#333',
+      color:  props.dark ? '#333' : '#eee',
       marginBottom: '2rem',
       textAlign: 'center',
       fontSize: '2.5rem',
@@ -23,7 +26,8 @@ export default function Projects(props) {
       gap: '2rem',
     },
     projectCard: {
-      backgroundColor: props.dark ? '#333' : '#ddd', // Slightly lighter dark blue
+      // backgroundColor: props.dark ? '#333' : '#ddd',
+      backgroundColor: props.dark ? '#ddd' : '#333', 
       borderRadius: '12px',
       padding: '2rem',
       boxShadow: '0 4px 8px rgba(0, 0, 0, 0.34)',
@@ -32,7 +36,8 @@ export default function Projects(props) {
       justifyContent: 'space-between',
     },
     projectTitle: {
-      color:  props.dark ? '#eee' : '#333',
+      // color:  props.dark ? '#eee' : '#333',
+      color:  props.dark ? '#333' : '#eee',
       fontSize: '1.8rem',
       fontWeight: '600',
       marginBottom: '1rem',
@@ -45,10 +50,12 @@ export default function Projects(props) {
     projectTech: {
       marginTop: '1rem',
       textAlign: 'center',
-      color: props.dark ? '#333' : '#eee',
+      // color: props.dark ? '#333' : '#eee',
+      color: props.dark ? '#eee' : '#333',
     },
     techTag: {
-      backgroundColor:  props.dark ? '#ddd' : '#222', // Darker gray for tags
+      // backgroundColor:  props.dark ? '#ddd' : '#222', 
+      backgroundColor:  props.dark ? '#222' : '#ddd', // Darker gray for tags
       padding: '0.5rem 1rem',
       borderRadius: '20px',
       margin: '0.3rem',

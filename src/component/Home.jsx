@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link } from "react-router-dom";
-import photoMy from './parth.jpg';
+import Profile from '../assets/images/profile.png';
 
 export default function Home(props) {
   const styles = {
@@ -66,7 +66,7 @@ export default function Home(props) {
     <div style={styles.container}>
       <div style={styles.card}>
         <img
-          src={{photoMy}} // Replace with your image path
+          src={{Profile}} // Replace with your image path
           alt="Profile"
           style={styles.profileImage}
         />

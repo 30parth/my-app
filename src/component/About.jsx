@@ -3,8 +3,10 @@ import React from 'react'
 export default function About(props) {
     const styles = {
         container: {
-            backgroundColor:  props.dark ? '#333' : '#eee',
-            color:  props.dark ? '#eee' : '#333 ',
+            // backgroundColor:  props.dark ? '#333' : '#eee',
+            backgroundColor:  props.dark ? '#eee' : '#333',
+            // color:  props.dark ? '#eee' : '#333 ',
+            color:  props.dark ? '#333' : '#eee',
             padding: '5rem',
             borderRadius: '12px',
             fontFamily: 'Roboto, sans-serif',
@@ -13,7 +15,8 @@ export default function About(props) {
             margin: '0rem auto',
         },
         heading: {
-            color:  props.dark ? '#eee' : '#333',
+            // color:  props.dark ? '#eee' : '#333',
+            color:  props.dark ? '#333' : '#eee',
             marginBottom: '2rem',
             textAlign: 'center',
             fontSize: '2.5rem',
@@ -27,7 +30,8 @@ export default function About(props) {
             paddingBottom: '2rem',
         },
         sectionHeading: {
-            color: props.dark ? '#eee' : '#333',
+            // color: props.dark ? '#eee' : '#333',
+            color:  props.dark ? '#333' : '#eee',
             marginBottom: '1rem',
             fontSize: '1.8rem',
             fontWeight: '600',
@@ -44,7 +48,8 @@ export default function About(props) {
             fontSize: '1.1rem',
         },
         back: {
-            backgroundColor:  props.dark ? '#222' : '#fff',
+            // backgroundColor:  props.dark ? '#222' : '#fff',
+            backgroundColor:  props.dark ? '#fff' : '#222',
             margin: '0',
             padding: '3rem',
         },
